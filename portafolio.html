@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio Tecnológico</title>
+
+    <link rel="icon" href="img/mundito.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tus estilos -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/portafolio.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi Portafolio Tecnológico</h1>
+        <p>Trayectoria de aprendizaje en desarrollo web, habilidades técnicas y objetivos profesionales.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            Inicio
+        </a>
+
+        <a href="index.html#objetivo">Objetivo</a>
+        <a href="index.html#intereses">Intereses</a>
+        <a href="pages/buscar.html">Buscar</a>
+
+        <a href="pages/cto/contacto.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contacto
+        </a>
+    </nav>
+
+    <main>
+
+        <section id="estado-actual">
+            <h2>Estado Actual</h2>
+            <p>
+                Actualmente me encuentro cursando la asignatura de Fundamentos de Sistemas Web en la
+                Universidad de las Fuerzas Armadas ESPE. En esta etapa del aprendizaje he consolidado
+                el uso de HTML semántico y CSS para estructurar y estilizar páginas web.
+            </p>
+
+            <p class="nota">
+                Este portafolio documenta mi progreso técnico durante el período abril – agosto 2026.
+            </p>
+
+            <p>Tecnologías clave:</p>
+            <ul>
+                <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+                <li><i class="fa-brands fa-github"></i> GitHub</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+
+            <article class="tarjeta-proyecto">
+                <h3>01 / Maquetación Estática</h3>
+                <p>Construcción de la estructura base con HTML5.</p>
+            </article>
+
+            <article class="tarjeta-proyecto">
+                <h3>02 / Estilos</h3>
+                <p>Aplicación de CSS y modelo de caja.</p>
+            </article>
+
+            <article class="tarjeta-proyecto">
+                <h3>03 / Responsive</h3>
+                <p>Uso de media queries.</p>
+            </article>
+
+            <article class="tarjeta-proyecto">
+                <h3>04 / Navegación</h3>
+                <p>Organización de rutas.</p>
+            </article>
+        </section>
+
+        <section id="entorno">
+            <h2>Entorno de Desarrollo</h2>
+
+            <figure>
+                <img src="img/espe/imagenEjemploEspe.png" width="320">
+                <figcaption>Evidencia del entorno académico.</figcaption>
+            </figure>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Nivel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Avanzado</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermedio</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="avance">
+            <h2>Avance</h2>
+            <progress value="90" max="100"></progress>
+            <progress value="80" max="100"></progress>
+        </section>
+
+        <br><br>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <video src="video/video para la practica uribejair.mp4" class="d-block w-100" autoplay muted loop></video>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="img/espe/imagenEjemploEspe.png" class="d-block w-100" alt="Imagen 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <video src="video/videoEjemploDiagnostica.mp4" class="d-block w-100" autoplay muted loop></video>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Geovanny Brito Casanova.</p>
+        <p>Clase de Fundamentos Web - HTML Semántico.</p>
+
+        <address>
+            Ecuador<br>
+            Contacto académico: curso@ejemplo.com
+        </address>
+    </footer>
+
+    <!-- Bootstrap JS para poder hacer lo del bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+/* ============================================================
+   portafolio.css
+   Estilos propios de portafolio.html.
+   Este archivo se carga después de general.css y aplica
+   únicamente estilos específicos a la página de portafolio.
+   ============================================================ */
+
+
+/* ============================================================
+   BLOQUE 1: ENCABEZADO DEL PORTAFOLIO
+   Se diferencia del index con un fondo verde oscuro alternativo.
+   ============================================================ */
+
+header {
+    background-color: #0d1910;
+    border-bottom: 4px solid #dba112;
+}
+
+
+/* ============================================================
+   BLOQUE 2: ENLACE ACTIVO EN NAVEGACIÓN
+   Resalta el enlace de la página actual en el menú.
+   En HTML se usa: class="activo"
+   ============================================================ */
+
+nav a.activo {
+    background-color: #0d1910;
+    color: #dba112;
+    border: 1px solid #dba112;
+}
+
+
+/* ============================================================
+   BLOQUE 3: SECCIÓN ESTADO ACTUAL
+   ID específico para la sección introductoria.
+   ============================================================ */
+
+#estado-actual {
+    background-color: #fff8e6;
+    border-left: 6px solid #dba112;
+}
+
+#estado-actual ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#estado-actual li {
+    background-color: #f4f6f8;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #0d1910;
+}
+
+#estado-actual li i {
+    color: #1b7505;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+
+/* ============================================================
+   BLOQUE 4: SECCIÓN SOBRE EL PORTAFOLIO
+   Resalta con borde izquierdo verde.
+   ============================================================ */
+
+#sobre-portafolio {
+    border-left: 6px solid #1b7505;
+    background-color: #f7fff4;
+}
+
+
+/* ============================================================
+   BLOQUE 5: TARJETAS DE PROYECTO
+   Clase reutilizable para los artículos del portafolio.
+   En HTML: class="tarjeta-proyecto"
+   ============================================================ */
+
+.tarjeta-proyecto {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 18px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.10);
+    margin-bottom: 15px;
+    transition: border-color 0.2s;
+}
+
+.tarjeta-proyecto:hover {
+    border-color: #1b7505;
+    box-shadow: 0 4px 10px rgba(27, 117, 5, 0.15);
+}
+
+.tarjeta-proyecto h3 {
+    color: #1b7505;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 8px;
+}
+
+
+/* ============================================================
+   BLOQUE 6: SECCIÓN ENTORNO DE DESARROLLO
+   Estilo para la sección con imagen institucional.
+   ============================================================ */
+
+#entorno {
+    background-color: #f4f6f8;
+}
+
+#entorno figure {
+    border: 2px solid #dba112;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+
+/* ============================================================
+   BLOQUE 7: OBJETIVOS PROFESIONALES
+   Diferencia visual por cada artículo de objetivo.
+   ============================================================ */
+
+#objetivos-profesionales article {
+    border-left: 4px solid #dba112;
+    margin-bottom: 12px;
+    background-color: #fffdf5;
+}
+
+#objetivos-profesionales h3 {
+    color: #dba112;
+}
+
+
+/* ============================================================
+   BLOQUE 8: TABLA DE HABILIDADES
+   Estilo diferenciado para la tabla del portafolio.
+   ============================================================ */
+
+#habilidades table {
+    margin-top: 14px;
+}
+
+#habilidades th {
+    background-color: #0d1910;
+    font-size: 15px;
+}
+
+#habilidades td:first-child {
+    font-weight: bold;
+    color: #1b7505;
+}
+
+#habilidades caption {
+    font-size: 15px;
+    color: #0d1910;
+    font-weight: bold;
+}
+
+
+/* ============================================================
+   BLOQUE 9: SECCIÓN DE AVANCE
+   Estilo para las barras de progreso del portafolio.
+   ============================================================ */
+
+#avance {
+    background-color: #fff8e6;
+    border-left: 6px solid #dba112;
+}
+
+
+/* ============================================================
+   BLOQUE 10: DETAILS DEL PORTAFOLIO
+   Diferencia visual respecto al details general.
+   ============================================================ */
+
+main details {
+    background-color: white;
+    border: 1px solid #1b7505;
+}
+
+main details summary {
+    color: #0d1910;
+}
+
+main details summary:hover {
+    color: #1b7505;
+<<<<<<< HEAD
+}
+.form{
+    border-left:3px solid green;
+    background-color: antiquewhite;
+}
+
+.form h3 {
+    color: black;
+=======
+>>>>>>> d5bfc8a7b1bece2302049d4a38b0e4f1a8f072b7
+}
+/* Forzar a que las imágenes y videos del carrusel tengan la misma altura */
+.carousel-item img, 
+.carousel-item video {
+    height: 300px; /* Puedes cambiar 500px por la altura que tú quieras */
+    object-fit: cover; /* Evita que el video o foto se estiren o deformen */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}

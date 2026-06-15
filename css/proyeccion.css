@@ -1,0 +1,112 @@
+/* ============================================================
+   proyeccion.css - Versión Variada y Reordenada
+   Personalización para evitar la monotonía con general.css
+   ============================================================ */
+
+/* HEADER Y FOOTER: Conservan la identidad base profunda */
+header,
+footer {
+    background-color: #0d1910;
+}
+
+/* NAVBAR VARIADO: En lugar de fondo dorado entero, usamos fondo oscuro 
+   con detalles e indicadores en dorado/verde para cambiar el patrón visual */
+.navbar {
+    background-color: #112215; /* Más claro que el header para contrastar */
+    border-bottom: 3px solid #dba112; /* Línea delgada dorada */
+}
+
+.navbar .navbar-brand {
+    color: #dba112 !important; /* Marca en dorado */
+}
+
+.navbar .nav-link {
+    color: #ffffff !important;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #dba112 !important;
+    background-color: rgba(219, 161, 18, 0.1);
+    border-radius: 4px;
+}
+
+/* TÍTULOS DE SECCIÓN: Subrayado invertido en verde con padding elegante */
+main h2 {
+    color: #1b7505;
+    border-bottom: 2px solid #1b7505; /* Subrayado verde en lugar de dorado */
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* CARDS VARIADAS: Rompemos la monotonía destacando de forma asimétrica la tarjeta del centro */
+.card-proyeccion {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-bottom: 4px solid #1b7505; /* Borde abajo en lugar de arriba */
+}
+
+.card-proyeccion .card-title {
+    color: #1b7505;
+}
+
+/* Tarjeta del medio en el HTML tendrá esta clase para resaltar */
+.card-destacada {
+    background-color: #1b7505 !important;
+    border-bottom: 4px solid #dba112;
+}
+.card-destacada .card-title {
+    color: #dba112 !important;
+}
+
+/* BOTONES Y COMPONENTES DE ACCIÓN (Dorado como activador) */
+.btn-custom-action {
+    background-color: #dba112;
+    color: #0d1910;
+    font-weight: bold;
+    border: none;
+}
+.btn-custom-action:hover {
+    background-color: #be8a0e;
+    color: #0d1910;
+}
+
+/* TABLA MODIFICADA: Estilo alternado y limpio */
+.custom-table thead th {
+    background-color: #112215 !important;
+    color: #dba112 !important; /* Cabecera oscura con letras doradas */
+    border: none;
+}
+
+/* ACORDEÓN PERSONALIZADO */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(27, 117, 5, 0.1);
+    color: #1b7505;
+}
+
+/* ASIDE Y ALERTAS: Caja clara estilizada */
+.alert-custom-aside {
+    background-color: #f4f9f4;
+    border-left: 6px solid #1b7505;
+    border-radius: 4px;
+}
+
+.alert-success-custom {
+    background-color: #fff8e6;
+    border: 1px solid #dba112;
+    color: #614603;
+}
+
+/* MODAL HEADER */
+.header-modal-custom {
+    background-color: #112215;
+    border-bottom: 3px solid #dba112;
+}
+
+/* BADGES */
+.bg-custom-badge {
+    background-color: #1b7505;
+    color: #ffffff;
+}
